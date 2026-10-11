@@ -101,96 +101,116 @@ export default function LotaBuildersHomePage() {
   return (
     <div className="min-h-screen bg-[#fafafa] text-zinc-900 flex flex-col font-sans selection:bg-amber-500/20 selection:text-amber-950">
       {/* ------------------------------------------------------------------- */}
-      {/* TOP TECHNICAL TICKER (Matching PDF page 1 status header)            */}
+      {/* TOP ANNOUNCEMENT TICKER (Clean Editorial Status Header)              */}
       {/* ------------------------------------------------------------------- */}
-      <div className="border-b border-zinc-200 bg-white text-[11px] font-mono tracking-wider text-zinc-600 py-2 px-4 sm:px-8 flex flex-wrap items-center justify-between gap-3">
-        <div className="flex items-center gap-4">
-          <span className="flex items-center gap-1.5 text-zinc-800 font-medium">
-            <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-            OPERATIONAL STATUS: SITE TEAMS ACTIVE // Q1-Q2 TENDERS OPEN
-          </span>
-          <span className="hidden md:inline text-zinc-300">|</span>
-          <span className="hidden md:inline text-zinc-500">
-            HEADQUARTERS: 114 SILVER ST, KINGS HEATH, B14 7QT
-          </span>
-        </div>
-        <div className="flex items-center gap-4">
-          <span className="text-zinc-500">JCT DESIGN &amp; BUILD ADHERENT</span>
-          <span className="text-zinc-300">|</span>
-          <a
-            href="tel:01214498200"
-            className="hover:text-zinc-950 transition-colors flex items-center gap-1 text-zinc-800 font-medium"
-          >
-            <Phone className="w-3 h-3 text-amber-600" />
-            0121 449 8200
-          </a>
+      <div className="border-b border-zinc-200 bg-zinc-950 text-[11px] font-mono tracking-wider text-zinc-400 py-2 px-4 sm:px-8">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <span className="flex items-center gap-1.5 text-white font-medium">
+              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+              SITE TEAMS ACTIVE
+            </span>
+            <span className="text-zinc-600">//</span>
+            <span className="text-zinc-400 hidden sm:inline">Q1–Q2 Commercial &amp; Faith Tenders Open</span>
+            <span className="text-zinc-700 hidden lg:inline">|</span>
+            <span className="text-zinc-400 hidden lg:inline">Headquarters: 114 Silver St, Kings Heath, B14 7QT</span>
+          </div>
+          <div className="flex items-center gap-4 text-zinc-400">
+            <span className="hidden md:inline text-zinc-400">JCT Contract Adherent</span>
+            <span className="text-zinc-700 hidden md:inline">|</span>
+            <a
+              href="tel:01214498200"
+              className="hover:text-white transition-colors flex items-center gap-1.5 text-zinc-200 font-medium"
+            >
+              <Phone className="w-3 h-3 text-amber-500" />
+              <span>0121 449 8200</span>
+            </a>
+          </div>
         </div>
       </div>
 
       {/* ------------------------------------------------------------------- */}
-      {/* 1. HEADER / NAVBAR (Clean White Editorial Style)                    */}
+      {/* 1. HEADER / NAVBAR (Architron Minimalist Editorial Style)           */}
       {/* ------------------------------------------------------------------- */}
       <header className="sticky top-0 z-50 backdrop-blur-md bg-white/95 border-b border-zinc-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          {/* Architectural Monogram Logo */}
-          <a href="#" className="flex items-center gap-3.5 group">
-            <div className="h-10 w-10 border border-zinc-900 bg-zinc-950 flex items-center justify-center text-amber-400 group-hover:bg-zinc-800 transition-colors">
-              <Building2 className="w-5 h-5 stroke-[1.5]" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between gap-6">
+          {/* Architectural Brand Logo */}
+          <a href="#" className="flex items-center gap-3 group flex-shrink-0">
+            <div className="h-10 w-10 rounded-full bg-zinc-950 flex items-center justify-center text-amber-400 group-hover:bg-zinc-800 transition-colors shadow-sm flex-shrink-0">
+              <Building2 className="w-5 h-5 stroke-[1.75]" />
             </div>
             <div className="flex flex-col">
-              <span className="font-semibold tracking-[0.16em] text-sm text-zinc-950 uppercase group-hover:text-amber-700 transition-colors">
-                LOTA BUILDERS
+              <span className="font-bold tracking-tight text-base text-zinc-950 leading-tight group-hover:text-amber-800 transition-colors whitespace-nowrap">
+                Lota Builders
               </span>
-              <span className="font-mono text-[10px] tracking-widest text-zinc-500 uppercase">
-                EST. 2000 | BIRMINGHAM, UK
+              <span className="font-mono text-[10px] tracking-widest text-zinc-500 uppercase whitespace-nowrap">
+                Est. 2000 &bull; Birmingham
               </span>
             </div>
           </a>
 
-          {/* Desktop Navigation Links (Architron editorial style) */}
-          <nav className="hidden lg:flex items-center gap-8 text-xs font-mono tracking-wider uppercase text-zinc-600">
-            <a href="#services" className="hover:text-zinc-950 transition-colors py-2 flex items-center gap-1.5">
-              <span className="text-zinc-400">01</span> Services
+          {/* Desktop Navigation Links (Title Case, Clean Typography, Zero Clutter) */}
+          <nav className="hidden lg:flex items-center gap-7 xl:gap-9 text-sm font-medium text-zinc-600">
+            <a
+              href="#services"
+              className="hover:text-zinc-950 transition-colors whitespace-nowrap py-1 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-zinc-950 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+            >
+              Services
             </a>
-            <a href="#model" className="hover:text-zinc-950 transition-colors py-2 flex items-center gap-1.5">
-              <span className="text-zinc-400">02</span> Operating Model
+            <a
+              href="#model"
+              className="hover:text-zinc-950 transition-colors whitespace-nowrap py-1 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-zinc-950 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+            >
+              Operating Model
             </a>
-            <a href="#projects" className="hover:text-zinc-950 transition-colors py-2 flex items-center gap-1.5">
-              <span className="text-zinc-400">03</span> Case Studies
+            <a
+              href="#projects"
+              className="hover:text-zinc-950 transition-colors whitespace-nowrap py-1 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-zinc-950 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+            >
+              Case Studies
             </a>
-            <a href="#process" className="hover:text-zinc-950 transition-colors py-2 flex items-center gap-1.5">
-              <span className="text-zinc-400">04</span> Methodology
+            <a
+              href="#process"
+              className="hover:text-zinc-950 transition-colors whitespace-nowrap py-1 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-zinc-950 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+            >
+              Methodology
             </a>
-            <a href="#credentials" className="hover:text-zinc-950 transition-colors py-2 flex items-center gap-1.5">
-              <span className="text-zinc-400">05</span> Compliance
+            <a
+              href="#credentials"
+              className="hover:text-zinc-950 transition-colors whitespace-nowrap py-1 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-zinc-950 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+            >
+              Compliance
             </a>
-            <a href="#faq" className="hover:text-zinc-950 transition-colors py-2 flex items-center gap-1.5">
-              <span className="text-zinc-400">06</span> FAQ
+            <a
+              href="#faq"
+              className="hover:text-zinc-950 transition-colors whitespace-nowrap py-1 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-zinc-950 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+            >
+              FAQ
             </a>
           </nav>
 
           {/* Direct Action CTAs (Matching PDF) */}
-          <div className="hidden sm:flex items-center gap-3">
+          <div className="hidden sm:flex items-center gap-3.5 flex-shrink-0">
             <a
               href="tel:01214498200"
-              className="px-3.5 py-2 text-xs font-mono tracking-wider text-zinc-700 border border-zinc-200 bg-white hover:bg-zinc-50 hover:border-zinc-300 transition-all flex items-center gap-1.5 shadow-sm"
+              className="hidden xl:inline-flex items-center gap-2 text-xs font-mono text-zinc-700 hover:text-zinc-950 transition-colors whitespace-nowrap px-3 py-2 border border-zinc-200 rounded-md bg-white hover:bg-zinc-50 shadow-xs"
             >
-              <Phone className="w-3.5 h-3.5 text-zinc-600" />
+              <Phone className="w-3.5 h-3.5 text-amber-600" />
               <span>0121 449 8200</span>
             </a>
             <a
               href="#tender"
-              className="px-4 py-2 text-xs font-mono uppercase tracking-wider text-white bg-zinc-950 hover:bg-zinc-800 font-medium transition-all shadow-sm flex items-center gap-1.5"
+              className="inline-flex items-center justify-center px-4.5 py-2.5 text-xs font-medium text-white bg-zinc-950 hover:bg-zinc-800 rounded-md transition-all whitespace-nowrap shadow-sm group"
             >
               <span>Request Tender Quote</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
+              <ArrowUpRight className="w-3.5 h-3.5 ml-1.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-zinc-600 hover:text-zinc-950 hover:bg-zinc-100 border border-zinc-200"
+            className="lg:hidden p-2 text-zinc-700 hover:text-zinc-950 hover:bg-zinc-100 border border-zinc-200 rounded-md"
             aria-label="Toggle navigation"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -199,68 +219,68 @@ export default function LotaBuildersHomePage() {
 
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-zinc-200 bg-white px-6 py-6 space-y-4 shadow-lg">
-            <nav className="flex flex-col space-y-3 font-mono text-xs uppercase tracking-wider text-zinc-800">
+          <div className="lg:hidden border-t border-zinc-200 bg-white px-6 py-6 space-y-4 shadow-lg animate-in fade-in duration-200">
+            <nav className="flex flex-col space-y-2 text-sm font-medium text-zinc-800">
               <a
                 href="#services"
                 onClick={() => setMobileMenuOpen(false)}
-                className="py-2 border-b border-zinc-100 flex justify-between"
+                className="py-2.5 border-b border-zinc-100 flex items-center justify-between hover:text-amber-700 transition-colors"
               >
-                <span>01 // Core Services</span>
+                <span>Services</span>
                 <ChevronDown className="w-4 h-4 -rotate-90 text-zinc-400" />
               </a>
               <a
                 href="#model"
                 onClick={() => setMobileMenuOpen(false)}
-                className="py-2 border-b border-zinc-100 flex justify-between"
+                className="py-2.5 border-b border-zinc-100 flex items-center justify-between hover:text-amber-700 transition-colors"
               >
-                <span>02 // Operating Model</span>
+                <span>Operating Model</span>
                 <ChevronDown className="w-4 h-4 -rotate-90 text-zinc-400" />
               </a>
               <a
                 href="#projects"
                 onClick={() => setMobileMenuOpen(false)}
-                className="py-2 border-b border-zinc-100 flex justify-between"
+                className="py-2.5 border-b border-zinc-100 flex items-center justify-between hover:text-amber-700 transition-colors"
               >
-                <span>03 // Selected Schemes</span>
+                <span>Case Studies</span>
                 <ChevronDown className="w-4 h-4 -rotate-90 text-zinc-400" />
               </a>
               <a
                 href="#process"
                 onClick={() => setMobileMenuOpen(false)}
-                className="py-2 border-b border-zinc-100 flex justify-between"
+                className="py-2.5 border-b border-zinc-100 flex items-center justify-between hover:text-amber-700 transition-colors"
               >
-                <span>04 // Delivery Methodology</span>
+                <span>Methodology</span>
                 <ChevronDown className="w-4 h-4 -rotate-90 text-zinc-400" />
               </a>
               <a
                 href="#credentials"
                 onClick={() => setMobileMenuOpen(false)}
-                className="py-2 border-b border-zinc-100 flex justify-between"
+                className="py-2.5 border-b border-zinc-100 flex items-center justify-between hover:text-amber-700 transition-colors"
               >
-                <span>05 // Trust &amp; Certifications</span>
+                <span>Compliance &amp; Accreditations</span>
                 <ChevronDown className="w-4 h-4 -rotate-90 text-zinc-400" />
               </a>
               <a
                 href="#faq"
                 onClick={() => setMobileMenuOpen(false)}
-                className="py-2 border-b border-zinc-100 flex justify-between"
+                className="py-2.5 border-b border-zinc-100 flex items-center justify-between hover:text-amber-700 transition-colors"
               >
-                <span>06 // Common Questions</span>
+                <span>Common Questions</span>
                 <ChevronDown className="w-4 h-4 -rotate-90 text-zinc-400" />
               </a>
             </nav>
             <div className="pt-2 flex flex-col gap-3">
               <a
                 href="tel:01214498200"
-                className="w-full text-center py-2.5 text-xs font-mono border border-zinc-200 text-zinc-800 bg-zinc-50"
+                className="w-full text-center py-2.5 text-xs font-mono border border-zinc-200 text-zinc-800 bg-zinc-50 rounded-md hover:bg-zinc-100 transition-colors"
               >
                 Direct Estimator: 0121 449 8200
               </a>
               <a
                 href="#tender"
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-full text-center py-2.5 text-xs font-mono uppercase bg-zinc-950 text-white font-medium"
+                className="w-full text-center py-2.5 text-xs font-medium uppercase tracking-wider bg-zinc-950 hover:bg-zinc-800 text-white rounded-md transition-colors shadow-sm"
               >
                 Submit Blueprints / Plans
               </a>
